@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #edaa7e;
+    font-family: 'kode Mono',sans-serif;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 100px;
+  
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    display: flex;
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(33, 29, 24);
+}
+
+nav ul a:hover{
+
+    color: rgb(195, 76, 115);
+    font-size: large;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.firstsec{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+    align-items: center;
+}
+.lsec{
+    margin: 73px 0;
+    font-size: 2rem;
+}
+
+
+.name{
+    color: rgb(90, 14, 184);
+}
+
+#element{
+    color: rgb(90, 14, 184);
+}
+
+.secondsec{
+    max-width: 80vw;
+    margin: auto;
+    font-size: larger;
+    height: 60vh;
+}
+#grey{
+    color: gray;
+}
+
+main hr{
+    border: 0;
+    background-color: black;
+    height: 3px;
+    margin: 40px 50px;
+}
+
+.secondsec .box{
+    background: black;
+    width: 80vw;
+    height: 2px;
+    margin: 0 56px;
+    display: flex;
+}
+
+.secondsec .verticle{
+    height: 93px;
+    width: 1px;
+    background-color: black;
+    margin: 0 100px;
+}
+
+.secondsec .verticle .verttitle{
+    position: relative;
+    top: 100px;
+    width: 150px;
+}
+
+.secondsec .verticle .verdesc{
+    position: relative;
+    top: 100px;
+    width: 150px;
+    color: blue;
+    font-size: 12px;
+}
+
+footer{
+    background-color: antiquewhite;
+    height: 233px;
+}
+
+.footer{
+    display: flex;
+    padding:  23px 122px;
+}
