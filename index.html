@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ayushman Dalvi – Python Developer & B.Tech CS Student. Portfolio showcasing projects, skills, and experience." />
+    <meta name="keywords"
+        content="Ayushman Dalvi, Python Developer, Django, Flask, PyQt6, Portfolio, JSPM University" />
+    <title>Ayushman Dalvi | Python Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ─── CANVAS BACKGROUND ─── -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ─── CURSOR GLOW ─── -->
+    <div id="cursor-glow"></div>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AD<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="mailto:ayushman1452004@gmail.com" class="nav-cta" id="hire-btn">Hire Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── HERO SECTION ─── -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span> Open to Work
+            </div>
+            <h1 class="hero-name reveal-up delay-1">
+                Ayushman<br /><span class="gradient-text">Dalvi</span>
+            </h1>
+            <div class="hero-roles reveal-up delay-2">
+                <span class="prefix">I build</span>
+                <div class="type-wrapper">
+                    <span id="typed-text"></span>
+                    <span class="cursor-bar">|</span>
+                </div>
+            </div>
+            <p class="hero-desc reveal-up delay-3">
+                B.Tech CSE student &amp; aspiring Python Developer crafting scalable backends,
+                desktop apps &amp; AI-powered solutions.
+            </p>
+            <div class="hero-actions reveal-up delay-4">
+                <a href="#projects" class="btn btn-primary" id="view-work-btn">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline" id="contact-btn">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </a>
+            </div>
+            <div class="hero-stats reveal-up delay-5">
+                <div class="stat">
+                    <div class="stat-val"><span class="stat-number" data-target="2">0</span><span
+                            class="stat-suffix">+</span></div>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-val"><span class="stat-number" data-target="7">0</span><span
+                            class="stat-suffix">+</span></div>
+                    <span class="stat-label">Technologies</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-visual reveal-right delay-2">
+            <div class="code-card" id="code-card">
+                <div class="code-card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">developer.py</span>
+                </div>
+                <pre class="code-body"><code><span class="kw">class</span> <span class="cls">AyushmanDalvi</span>:
+  <span class="kw">def</span> <span class="fn">__init__</span>(self):
+    self.name = <span class="str">"Ayushman Dalvi"</span>
+    self.role = <span class="str">"Python Developer"</span>
+    self.stack = [
+      <span class="str">"Python"</span>, <span class="str">"Django"</span>,
+      <span class="str">"Flask"</span>, <span class="str">"PyQt6"</span>,
+      <span class="str">"React.js"</span>, <span class="str">"SQL"</span>
+    ]
+    self.passion = <span class="str">"Building things"</span>
+    self.open_to_work = <span class="bool">True</span>
+
+  <span class="kw">def</span> <span class="fn">greet</span>(self):
+    <span class="kw">return</span> <span class="str">"Let's build something"</span>
+         <span class="str">+ " amazing! 🚀"</span></code></pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT SECTION ─── -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-avatar-wrapper reveal-left">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <img src="photo.jpg" alt="Ayushman Dalvi" />
+                        </div>
+                    </div>
+                    <div class="about-socials">
+                        <a href="https://www.linkedin.com/in/ayushman-dalvi" target="_blank" class="social-chip"
+                            id="linkedin-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/ayushdalvi" target="_blank" class="social-chip" id="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <p class="about-para">
+                        I'm a <strong>Results-driven B.Tech Computer Science</strong> student at JSPM University, Pune,
+                        passionate about building real-world engineering solutions through code.
+                    </p>
+                    <p class="about-para">
+                        With hands-on experience in <strong>scalable backend systems, desktop applications,</strong>
+                        and <strong>automation tools</strong>, I leverage OOP principles and REST APIs to create
+                        impactful software.
+                    </p>
+                    <p class="about-para">
+                        I've contributed to open-source projects, completed a <strong>BCG Data Science Virtual
+                            Internship</strong>, and thrive in Linux environments with a strong foundation in Python
+                        ecosystems.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+                        <span class="tag"><i class="fas fa-envelope"></i> ayushman1452004@gmail.com</span>
+                        <span class="tag"><i class="fas fa-phone"></i> +91 8862071365</span>
+                        <span class="tag"><i class="fas fa-graduation-cap"></i> B.Tech CSE (2026)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SKILLS SECTION ─── -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Arsenal</span>
+                <h2 class="section-title">Skills &amp; Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category reveal-up">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill python">Python</span>
+                        <span class="skill-pill java">Java</span>
+                        <span class="skill-pill js">JavaScript</span>
+                        <span class="skill-pill ts">TypeScript</span>
+                        <span class="skill-pill sql">SQL</span>
+                        <span class="skill-pill html">HTML</span>
+                        <span class="skill-pill css">CSS</span>
+                    </div>
+                </div>
+                <!-- Frameworks -->
+                <div class="skill-category reveal-up delay-1">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks &amp; Libraries</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill django">Django</span>
+                        <span class="skill-pill flask">Flask</span>
+                        <span class="skill-pill pyqt">PyQt6</span>
+                        <span class="skill-pill react">React.js</span>
+                        <span class="skill-pill vue">Vue.js</span>
+                        <span class="skill-pill node">Node.js</span>
+                        <span class="skill-pill spring">Spring Boot</span>
+                        <span class="skill-pill tkinter">Tkinter</span>
+                        <span class="skill-pill bootstrap">Bootstrap</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category reveal-up delay-2">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools &amp; Databases</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill mysql">MySQL</span>
+                        <span class="skill-pill sqlite">SQLite</span>
+                        <span class="skill-pill git">Git</span>
+                        <span class="skill-pill github">GitHub</span>
+                        <span class="skill-pill powerbi">Power BI</span>
+                        <span class="skill-pill excel">Excel</span>
+                        <span class="skill-pill pyinstaller">PyInstaller</span>
+                    </div>
+                </div>
+                <!-- Competencies -->
+                <div class="skill-category reveal-up delay-3">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Core Competencies</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill hci">HCI</span>
+                        <span class="skill-pill ixd">Interaction Design</span>
+                        <span class="skill-pill leadership">Leadership</span>
+                        <span class="skill-pill comm">Communication</span>
+                        <span class="skill-pill negotiation">Negotiation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS SECTION ─── -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1: Volyx Browser -->
+                <div class="project-card featured reveal-up" id="project-volyx">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-globe"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ayushdalvi/Voyx-Browser" target="_blank" class="proj-link"
+                                title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-badge">Featured</div>
+                    <h3 class="project-name">Volyx Browser</h3>
+                    <p class="project-desc">
+                        A feature-rich web browser built with Python &amp; PyQt6, featuring a context-aware AI
+                        Assistant,
+                        modular OOP architecture, and memory optimization — outperforming standard Chromium wrappers by
+                        20%.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">Research Productivity ↑</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20%</span>
+                            <span class="metric-label">Memory Efficiency ↑</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets">
+                        <li><i class="fas fa-check-circle"></i> Integrated context-aware AI Assistant via PyQt6
+                            threading &amp; REST APIs</li>
+                        <li><i class="fas fa-check-circle"></i> Modular UI &amp; rendering components using OOP
+                            principles</li>
+                        <li><i class="fas fa-check-circle"></i> SQLite-based history &amp; bookmarks management</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>PyQt6</span>
+                        <span>QtWebEngine</span>
+                        <span>SQLite</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Desktop Cleaner -->
+                <div class="project-card reveal-up delay-1" id="project-cleaner">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-broom"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/ayushdalvi/desktop-cleaner" target="_blank" class="proj-link"
+                                title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Desktop Cleaner</h3>
+                    <p class="project-desc">
+                        An automated file organization system using Python &amp; Watchdog that processes file events in
+                        real-time, with a cross-platform GUI, standalone .exe, and JSON rule engine.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Cleanup Time Reduced</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20+</span>
+                            <span class="metric-label">Daily Active Users</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets">
+                        <li><i class="fas fa-check-circle"></i> Real-time file event processing with Watchdog</li>
+                        <li><i class="fas fa-check-circle"></i> Standalone Windows executable via PyInstaller</li>
+                        <li><i class="fas fa-check-circle"></i> Configurable JSON rule engine for custom extensions</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Watchdog</span>
+                        <span>PyInstaller</span>
+                        <span>JSON</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EXPERIENCE SECTION ─── -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Work &amp; Internships</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left" id="exp-bcg">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-company">BCG X – Forage</span>
+                            <span class="timeline-period">Feb 2026</span>
+                        </div>
+                        <h3 class="timeline-role">Virtual Data Science Intern</h3>
+                        <span class="timeline-type">Virtual Internship</span>
+                        <ul class="timeline-bullets">
+                            <li>Performed end-to-end data science tasks: preprocessing, exploratory analysis &amp;
+                                predictive modeling for a client business problem.</li>
+                            <li>Communicated findings through visualizations &amp; concise business summaries aligned
+                                with BCG consulting standards.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Data Science</span>
+                            <span>EDA</span>
+                            <span>Predictive Modeling</span>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EDUCATION SECTION ─── -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academics</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal-up" id="edu-jspm">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-body">
+                        <h3>JSPM University, Pune</h3>
+                        <p class="edu-degree">B.Tech in Computer Science</p>
+                        <div class="edu-meta">
+                            <span class="edu-period"><i class="fas fa-calendar"></i> Sep 2023 – May 2026
+                                (Expected)</span>
+                            <span class="edu-score gpa"><i class="fas fa-star"></i> CGPA: 7.2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card reveal-up delay-1" id="edu-zeal">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-body">
+                        <h3>ZEAL Polytechnic, Pune</h3>
+                        <p class="edu-degree">Diploma in Computer Science</p>
+                        <div class="edu-meta">
+                            <span class="edu-period"><i class="fas fa-calendar"></i> Jan 2021 – May 2023</span>
+                            <span class="edu-score percent"><i class="fas fa-star"></i> 82.46%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT SECTION ─── -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">I'm currently open to new opportunities. Feel free to reach out!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <a href="mailto:ayushman1452004@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <p class="contact-value">ayushman1452004@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+918862071365" class="contact-card" id="contact-phone">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <p class="contact-value">+91 8862071365</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayushman-dalvi" target="_blank" class="contact-card"
+                        id="contact-linkedin">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div>
+                            <p class="contact-label">LinkedIn</p>
+                            <p class="contact-value">ayushman-dalvi</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ayushdalvi" target="_blank" class="contact-card" id="contact-github">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <p class="contact-label">GitHub</p>
+                            <p class="contact-value">ayushdalvi</p>
+                        </div>
+                    </a>
+                </div>
+                <form class="contact-form reveal-right" id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Collaboration Opportunity"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width" id="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="form-success" class="form-success hidden">
+                        <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                Designed &amp; Built with <span class="heart">♥</span> by
+                <span class="footer-name">Ayushman Dalvi</span>
+            </p>
+            <p class="footer-sub">© 2025 · All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
